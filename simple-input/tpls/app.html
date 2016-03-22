@@ -1,0 +1,9 @@
+<h1>{{ name }}</h1>
+<p>An illustration of a sub-component with an input</p>
+<!--appID is defined in the component 'App' and becomes the input into the private variable 'id' in
+    the 'Example' subcomponent -->
+<div class="small boxy">
+    {{ myOpenTag }}
+    <example [id]="appId" [sn]="'BIXA'"></example>
+    {{ myCloseTag }}
+</div>

@@ -11,8 +11,10 @@ var config: any = {
 // Decorate the class HelloAngular (i.e. the Component) with the @Component metatag
 @Component(config) class HelloAngular {
     name : string;
+    mySelector: string;
     constructor() {
         this.name = 'Angular 2!!';
+        this.mySelector = "<hello>";
     }
 }
 
