@@ -1,0 +1,1 @@
+//# sourceMappingURL=IMyInterface.js.map
