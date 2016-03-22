@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Angular</title>
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Angular 2 Dependencies go here -->
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+    <!-- SystemJS settings go here -->
+    <script>
+        System.config({
+            packages: {
+                output: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('output/main')
+                .then(null, console.error.bind(console));
+    </script>
+
+</head>
+<body>
+    <!-- Hello component -->
+    <hello>Loading ... </hello>
+</body>
+</html>
