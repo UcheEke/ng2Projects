@@ -4,6 +4,7 @@
 "use strict";
 var Car = (function () {
     function Car() {
+        this.distance = 0;
     }
     Car.prototype.move = function () {
         this.distance += 1;
@@ -11,4 +12,5 @@ var Car = (function () {
     return Car;
 }());
 exports.Car = Car;
+// Exporting the class from this module allows main.ts to import it
 //# sourceMappingURL=Car.js.map
